@@ -1,0 +1,187 @@
+/* Universal Styles */
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* Styles */
+
+.flex {
+    display: flex;
+}
+
+.codecademy {
+    color: #1f2855;
+}
+
+#projects, #about-me{
+    margin: 10rem;
+}
+
+/* Nav */
+
+.nav-container {
+    background-color: rgba(45, 45, 45, 0.5);
+    width: 100%;
+    -webkit-backdrop-filter: blur(0.5rem);
+    backdrop-filter: blur(0.5rem);
+    position: fixed;
+}
+
+.links-container {
+    padding: 25px 35px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.link, .link a {
+    font-size: 2rem;
+    color: rgb(225, 225, 225);
+}
+
+.link a:hover {
+    color: #fff;
+    transition: color .3s;
+}
+
+/* Header */
+
+.header-container {
+    background: url("../imgs/coding-gif.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}  
+
+.header__title {
+    display: block;
+    font-size: 8rem;
+    margin-bottom: 2rem;
+}
+
+.header__subtitle {
+    display: block;
+    font-size: 6rem;
+    margin-top: 1rem;
+    border-right: 4px solid #e2e2e2;
+    white-space: nowrap;
+    width: 16ch;
+
+    animation: typing 2s steps(17),
+    blink .5s infinite step-end alternate;
+    overflow: hidden;
+}
+
+/* Main */
+
+.section-title {
+    font-size: 5rem;
+    text-align: center;
+    margin: 5rem 0;
+}
+
+/* About Me */
+
+#about-me {
+    height: 50vh;
+}
+
+.aboutme-container {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+}
+
+.aboutme-subtitle {
+    text-align: center;
+    width: 50rem;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    line-height: 1.1;
+}
+
+/* Projects */
+
+.projects-container {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+}
+
+.projects-subtitle {
+    text-align: center;
+    width: 50rem;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    line-height: 1.1;
+}
+
+/* Skills */
+
+.skills-container {
+    flex-wrap: wrap;
+}
+
+.skills-container > * {
+    font-size: 10rem;
+    margin: 0 auto;
+}
+
+/* Footer */
+
+.footer-text {
+    padding: 1rem;
+    text-align: center;
+    background-color: rgba(45, 45, 45);
+    color: #e2e2e2;
+}
+
+.footer-link {
+    color: #e2e2e2;
+}
+
+.footer-link:hover {
+    color: #fff;
+    transition: color .3s;
+}
+
+/* Toggle Button */
+
+.toggleButton {
+    position: fixed;
+    font-size: 2rem;
+    padding: 0.5rem;
+    border-radius: 1.5rem;
+    margin-left: 3rem;
+}
+
+/* Dark and white */
+
+.white {
+    background-color: #e2e2e2;
+    color: rgb(35, 35, 35);
+}
+
+.black {
+    background-color:rgb(35, 35, 35);
+    color: #e2e2e2;
+}
+
+/* Animation of typing */
+
+@keyframes typing {
+    from { width: 0; }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}

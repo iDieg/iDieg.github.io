@@ -6,9 +6,64 @@
     <link rel="stylesheet" href="/resources/css/style.css">
     <link rel="stylesheet" href="/resources/css/reset.css">
     <title>Dieg's Portfolio</title>
-    <script src="/src/js/app.js" defer></script>
+    <script src="/src/js/main.js" defer></script>
+    <script src="https://kit.fontawesome.com/20f3a3378c.js" crossorigin="anonymous" defer></script>
 </head>
 <body>
+    <!-- Nav -->
+    <nav class="nav-container">
+        <ul class="links-container flex">
+            <li class="link"><a href="#about-me">About Me</a></li>
+            <li class="link"><a href="#projects">Projects</a></li>
+            <li class="link"><a href="#">Skills</a></li>
+            <li class="link"><a href="contact-me.html">Contact</a></li>
+            <i class="fa-solid fa-sun toggleButton sun white"></i>
+            <i class="fa-solid fa-moon toggleButton moon white"></i>
+        </ul>
+    </nav>
     
+    <!-- Toggle Button -->
+
+    <!-- Header -->
+    <header class="header-container flex">
+        <div class="container-title">
+            <h1 class="header__title">Dieg</h1>
+            <p class="header__subtitle">Front End Developer</p>
+        </div>
+    </header>
+    <!-- Main -->
+    <main>
+        <section id="about-me">
+            <p class="section-title about-me">About Me</p>
+            <div class="aboutme-container">
+                <p class="aboutme-subtitle">
+                    Hi!, i'm Diego, a Front End Developer who enjoys to code.
+                </p>
+                <p class="aboutme-subtitle">
+                    I'm currently learning to code in <span class="codecademy">codecademy</span>, thanks to <span class="codecademy">codecademy</span> I have improved a lot and I will not stop until I complete all my objectives.
+                </p>
+            </div>
+        </section>
+        <section id="projects">
+            <p class="section-title projects">Projects</p>
+            <div class="projects-container">
+                <p class="projects-subtitle">More projects soon...</p>
+            </div>
+        </section>
+        <section id="skills">
+            <p class="section-title skills">Skills</p>
+            <div class="skills-container flex">
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-js"></i>
+                <i class="fa-brands fa-git"></i>
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-solid fa-terminal"></i>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p class="footer-text">© Copyright | <a href="https://github.com/iDieg" class="footer-link">iDieg</a> 2022 </p>
+    </footer>
 </body>
 </html>
