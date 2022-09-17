@@ -2,6 +2,8 @@
 
 body {
     font-family: "Poppins", sans-serif;
+    transition: all .5s;
+    background-color: #e2e2e2;
 }
 
 a {
@@ -19,7 +21,7 @@ a {
     color: #1f2855;
 }
 
-#projects, #about-me{
+#projects, #about-me, #skills{
     margin: 10rem;
 }
 
@@ -154,12 +156,9 @@ a {
 
 /* Toggle Button */
 
-.toggleButton {
-    position: fixed;
-    font-size: 2rem;
-    padding: 0.5rem;
-    border-radius: 1.5rem;
-    margin-left: 3rem;
+#toggleButton {
+    font-size: 3rem;
+    cursor: pointer;
 }
 
 /* Dark and white */
@@ -169,7 +168,7 @@ a {
     color: rgb(35, 35, 35);
 }
 
-.black {
+.dark {
     background-color:rgb(35, 35, 35);
     color: #e2e2e2;
 }
