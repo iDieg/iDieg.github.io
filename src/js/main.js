@@ -17,10 +17,12 @@ themeButton.addEventListener('click', () => {
     }
 })
 
+// Responsive
 const themeButtonResponsive = document.getElementById('toggleButton-responsive');
 const responsiveDiv = document.querySelector('.responsive-container');
 const barsButton = document.getElementById('barsButton');
 
+// Responsive Change theme function 
 themeButtonResponsive.addEventListener('click', () => {
     if (getIcon !== 'fa-sun') {
         document.body.classList.toggle(theme);
@@ -29,14 +31,8 @@ themeButtonResponsive.addEventListener('click', () => {
     }
 })
 
+// Responsive bars event
 barsButton.addEventListener('click', () => {
-    responsiveDiv.classList.toggle('display-none')
+    responsiveDiv.classList.toggle('display-none');
+    document.body.classList.toggle('overflow-hidden');
 })
-
-// contact link
-
-const contactIcon = document.querySelector('.contact-icon');
-
-contactIcon.onclick = () => {
-    window.open("https://github.com/iDieg", "_blank");
-}
