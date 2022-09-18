@@ -13,6 +13,10 @@ a {
 
 /* Styles */
 
+.display-none {
+    display: none;
+}
+
 .flex {
     display: flex;
 }
@@ -26,6 +30,10 @@ a {
 }
 
 /* Nav */
+
+.responsive__nav-container {
+    display: none;
+}
 
 .nav-container {
     background-color: rgba(45, 45, 45, 0.5);
@@ -103,7 +111,6 @@ a {
 
 .aboutme-subtitle {
     text-align: center;
-    width: 50rem;
     margin-bottom: 3rem;
     font-size: 2.5rem;
     line-height: 1.1;
@@ -119,7 +126,6 @@ a {
 
 .projects-subtitle {
     text-align: center;
-    width: 50rem;
     margin-bottom: 3rem;
     font-size: 2.5rem;
     line-height: 1.1;
@@ -222,6 +228,120 @@ a {
     background-color:rgb(35, 35, 35);
     color: #e2e2e2;
 }
+
+/* Responsive Nav */
+
+@media only screen and (max-width: 980px) {
+    
+    .nav-container {
+        display: none;
+    }
+
+    .responsive__nav-container {
+        display: block;
+        background-color: rgba(45, 45, 45, 0.5);
+        width: 100vw;
+        -webkit-backdrop-filter: blur(0.5rem);
+        backdrop-filter: blur(0.5rem);
+        position: fixed;
+        z-index: 100;
+    }
+
+    .responsive__links-container {
+        padding: 25px 35px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* Icons */
+    .fa-bars, #toggleButton-responsive {
+        font-size: 3rem;
+        cursor: pointer;
+    }
+
+    /* List */
+    .responsive-container {
+        position: absolute;
+        background-color: rgb(35, 35, 35);
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .responsive__link, .responsive__link a{
+        font-size: 3rem;
+        color: #e2e2e2;
+        list-style: none;
+        text-align: center;
+        padding: 1rem;
+        margin-top: 4rem;
+    }
+
+    /* Text */
+    
+    .header__title {
+        font-size: 6rem;
+    }
+    
+    .header__subtitle {
+        font-size: 4rem;
+    }
+
+    .aboutme-subtitle {
+        font-size: 2rem;
+        text-align: left;
+    }
+
+    .skills-container > * {
+        font-size: 4rem;
+        padding: 1rem;
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+    }
+
+}
+
+@media only screen and (max-width: 660px) {
+        /* Text */
+    
+        .header__title {
+            font-size: 3rem;
+        }
+        
+        .header__subtitle {
+            font-size: 2rem;
+        }
+        
+        .aboutme-subtitle {
+            font-size: 2rem;
+            text-align: center;
+            overflow: hidden;
+        }
+
+
+        .projects-subtitle {
+            font-size: 2rem;
+        }
+
+    
+        .skills-container > * {
+            font-size: 4rem;
+            padding: 1rem;
+        }
+
+        .section-title {
+            font-size: 3rem;
+            text-align: center;
+            margin: 5rem 0;
+        }
+
+        #skills, #projects, #about-me {
+            margin: auto;
+        }
+}
+
+
 
 /* Animation of typing */
 

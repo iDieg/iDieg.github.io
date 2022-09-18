@@ -3,6 +3,7 @@ const theme = 'dark';
 const icon = 'fa-sun'
 
 // Get icon function
+
 const getIcon = () => {
    return themeButton.classList.contains(icon) ? 'fa-sun' : 'fa-moon';
 }
@@ -14,6 +15,22 @@ themeButton.addEventListener('click', () => {
         themeButton.classList.toggle(icon);
         themeButton.classList.toggle('fa-moon');
     }
+})
+
+const themeButtonResponsive = document.getElementById('toggleButton-responsive');
+const responsiveDiv = document.querySelector('.responsive-container');
+const barsButton = document.getElementById('barsButton');
+
+themeButtonResponsive.addEventListener('click', () => {
+    if (getIcon !== 'fa-sun') {
+        document.body.classList.toggle(theme);
+        themeButtonResponsive.classList.toggle(icon);
+        themeButtonResponsive.classList.toggle('fa-moon');
+    }
+})
+
+barsButton.addEventListener('click', () => {
+    responsiveDiv.classList.toggle('display-none')
 })
 
 // contact link
