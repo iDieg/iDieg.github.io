@@ -103,12 +103,6 @@ a {
     height: 50vh;
 }
 
-.aboutme-container {
-    display: grid;
-    justify-content: center;
-    justify-items: center;
-}
-
 .aboutme-subtitle {
     text-align: center;
     margin-bottom: 3rem;
@@ -288,7 +282,7 @@ a {
 
     .aboutme-subtitle {
         font-size: 2rem;
-        text-align: left;
+        text-align: center;
     }
 
     .skills-container > * {
@@ -298,6 +292,10 @@ a {
 
     .section-title {
         font-size: 2.5rem;
+    }
+
+    #skills, #projects, #about-me {
+        margin: auto;
     }
 
 }
@@ -314,9 +312,8 @@ a {
         }
         
         .aboutme-subtitle {
-            font-size: 2rem;
+            font-size: 1.8rem;
             text-align: center;
-            overflow: hidden;
         }
 
 
