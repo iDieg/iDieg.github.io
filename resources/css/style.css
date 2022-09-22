@@ -155,19 +155,25 @@ a {
 .contact-title {
     font-size: 4rem;
     text-align: center;
+    padding-top: 6rem;
+}
+
+.contact-links {
+    margin-bottom: 91px;
 }
 
 /* Form */
 
 .form-container {
-    padding: 10rem 10rem 5rem 10rem;
-    margin: 0 auto;
+    
 }
 
+.contact-container {
+    padding: 0 20%;    
+}
 
 .form-input {
-    padding: 0.3rem;
-
+    padding: 0.5rem;
 }
 
 .form-send:hover {
@@ -182,7 +188,7 @@ a {
     margin: 0.5rem 0;
     border-radius: 5px;
     border-style: none;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 
@@ -337,8 +343,20 @@ a {
             margin: 5rem 0;
         }
 
+        .contact-title {
+            font-size: 3rem;
+        }
+
         #skills, #projects, #about-me {
             margin: auto;
+        }
+
+        .contact-container {
+            padding: 0 10%;    
+        }
+        
+        .contact-links {
+            margin-bottom: 107px;
         }
 }
 
