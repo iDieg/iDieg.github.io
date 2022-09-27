@@ -33,6 +33,10 @@ a {
     margin: 10rem;
 }
 
+.red-color {
+    color: #cc0000;
+}
+
 /* Nav */
 
 .responsive__nav-container {
@@ -188,10 +192,6 @@ a {
     font-size: 1.3rem;
 }
 
-
-.red-color {
-    color: #cc0000;
-}
 
 /* Footer */
 
