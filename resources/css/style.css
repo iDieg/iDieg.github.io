@@ -90,7 +90,7 @@ a {
     margin-top: 1rem;
     border-right: 4px solid #e2e2e2;
     white-space: nowrap;
-    width: 16ch;
+    width: 16.8ch;
 
     animation: typing 2s steps(17),
     blink .5s infinite step-end alternate;
